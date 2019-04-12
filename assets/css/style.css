@@ -21,9 +21,13 @@ body {
   background: -webkit-gradient(linear, left bottom, left top, from(var(--clr-1)), to(var(--clr-2)));
   background: linear-gradient(to top, var(--clr-1), var(--clr-2));
   min-height: 100vh;
-  font-size: 4em;
+  font-size: 24px;
   margin: 0;
   color: rgba(0, 0, 0, 0.7);
+}
+
+img {
+  max-width: 100%;
 }
 
 p {
@@ -35,8 +39,9 @@ p {
   display: grid;
   grid: "hello hello" 75vh "my-name-is simen" 125vh / -webkit-max-content 1fr;
   grid: "hello hello" 75vh "my-name-is simen" 125vh / max-content 1fr;
-  margin-bottom: 150vh;
+  margin-bottom: 60vh;
   grid-gap: 15px;
+  font-size: 4em;
 }
 
 .intro-1 {
@@ -69,4 +74,9 @@ p {
       align-self: end;
   font-weight: 900;
   font-style: italic;
+}
+
+.css {
+  text-align: center;
+  margin-bottom: 60vh;
 }
