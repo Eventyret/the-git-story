@@ -167,15 +167,17 @@ p {
 }
 
 .the-end {
+  position: relative;
   text-align: center;
-  height: 85vh;
+  height: 55vh;
 }
 
-.the-end .top, .the-end .bottom {
+.the-end .top,
+.the-end .bottom {
   color: #fff;
 }
 
-.the-end h1 {
+.the-end .top {
   font-size: 7rem;
   position: -webkit-sticky;
   position: sticky;
@@ -185,14 +187,13 @@ p {
   top: 2em;
 }
 
-.the-end h2 {
+.the-end .bottom {
   font-size: 5rem;
-  padding: 0.5em 0;
 }
 
 .the-end img {
   margin: 0 auto;
-  margin: 10vh 0 70vh 0;
+  margin: 10vh 0 20vh 0;
   position: -webkit-sticky;
   position: sticky;
   top: 0;

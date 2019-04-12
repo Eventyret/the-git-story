@@ -125,14 +125,14 @@ p {
   padding: 2em;
   height: 180vh;
   position: relative;
-  
+
   p {
     z-index: 2;
     color: #fff;
     position: sticky;
     top: 2em;
   }
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -140,28 +140,29 @@ p {
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 1; 
+    z-index: 1;
   }
 }
 .the-end {
+  position: relative;
   text-align: center;
-  height: 85vh;
-  .top, .bottom {
+  height: 55vh;
+  .top,
+  .bottom {
     color: #fff;
   }
-  h1 {
+  .top {
     font-size: 7rem;
     position: sticky;
     align-self: start;
     top: 2em;
   }
-  h2 {
+  .bottom {
     font-size: 5rem;
-    padding: 0.5em 0;
   }
   img {
     margin: 0 auto;
-    margin: 10vh 0 70vh 0;
+    margin: 10vh 0 20vh 0;
     position: sticky;
     top: 0;
   }
