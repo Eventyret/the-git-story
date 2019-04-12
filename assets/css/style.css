@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Exo|Indie+Flower");
 :root {
   --clr-1: #933ab4;
   --clr-2: #fd1d1d;
@@ -17,10 +17,10 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Exo', sans-serif;
   font-weight: 400;
-  background: -webkit-gradient(linear, left bottom, left top, from(var(--clr-1)), color-stop(var(--clr-2)), to(var(--clr-3)));
-  background: linear-gradient(to top, var(--clr-1), var(--clr-2), var(--clr-3));
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--clr-3)), color-stop(var(--clr-2)), to(var(--clr-1)));
+  background: linear-gradient(to top, var(--clr-3), var(--clr-2), var(--clr-1));
   min-height: 100vh;
   font-size: 24px;
   margin: 0;
@@ -33,6 +33,7 @@ img {
 
 p {
   margin: 0;
+  font-family: 'Indie Flower', cursive;
 }
 
 .css {
@@ -40,59 +41,12 @@ p {
   margin-bottom: 60vh;
   font-size: 7rem;
   color: var(--white);
+  font-family: 'Exo', sans-serif;
 }
 
 .jedi {
   margin-bottom: 10vh;
   z-index: -1;
-}
-
-.git-commands {
-  width: 80%;
-  margin: 0 auto;
-  display: -ms-grid;
-  display: grid;
-  grid: 'text terminal' 1fr / 1fr 1fr;
-  grid-gap: 1em;
-  color: var(--white);
-  margin-bottom: 100vh;
-}
-
-.git-commands p {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20vh;
-  grid-area: text;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-}
-
-.play-with-history {
-  background: url("../img/octobiwan.png") no-repeat center center;
-  background: cover;
-  font-size: 2rem;
-  padding: 2em;
-  height: 180vh;
-  position: relative;
-}
-
-.play-with-history p {
-  z-index: 2;
-  color: var(--white);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 2em;
-}
-
-.play-with-history::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
 }
 
 /* Gh pages */
@@ -113,6 +67,8 @@ section p {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
+  color: var(--white);
+  font-style: italic;
 }
 
 .section-title {
@@ -130,8 +86,9 @@ section p {
 }
 
 .others {
-  background: url("https://octodex.github.com/images/homercat.png") no-repeat center center;
-  background: cover;
+  background-image: url("https://octodex.github.com/images/homercat.png");
+  background-position: center center;
+  background-repeat: no-repeat;
   font-size: 2rem;
   padding: 2em;
   height: 180vh;
@@ -144,6 +101,7 @@ section p {
   position: -webkit-sticky;
   position: sticky;
   top: 2em;
+  font-style: italic;
 }
 
 .others::before {
@@ -157,8 +115,9 @@ section p {
 }
 
 .team {
-  background: url("https://octodex.github.com/images/front-end-conftocat.png") no-repeat center center;
-  background: cover;
+  background-image: url("https://octodex.github.com/images/front-end-conftocat.png");
+  background-position: center center;
+  background-repeat: no-repeat;
   font-size: 2rem;
   padding: 2em;
   height: 180vh;
@@ -171,6 +130,7 @@ section p {
   position: -webkit-sticky;
   position: sticky;
   top: 2em;
+  font-style: italic;
 }
 
 .team::before {
@@ -184,8 +144,9 @@ section p {
 }
 
 .history {
-  background: url("../img/octobiwan.png") no-repeat center center;
-  background: cover;
+  background-image: url("../img/octobiwan.png");
+  background-position: center center;
+  background-repeat: no-repeat;
   font-size: 2rem;
   padding: 2em;
   height: 180vh;
@@ -198,6 +159,7 @@ section p {
   position: -webkit-sticky;
   position: sticky;
   top: 2em;
+  font-style: italic;
 }
 
 .history::before {
@@ -211,8 +173,9 @@ section p {
 }
 
 .keep-calm {
-  background: url("https://octodex.github.com/images/femalecodertocat.png") no-repeat center center;
-  background: cover;
+  background-image: url("https://octodex.github.com/images/femalecodertocat.png");
+  background-position: center center;
+  background-repeat: no-repeat;
   font-size: 2rem;
   padding: 2em;
   height: 180vh;
@@ -225,6 +188,7 @@ section p {
   position: -webkit-sticky;
   position: sticky;
   top: 2em;
+  font-style: italic;
 }
 
 .keep-calm::before {
@@ -238,8 +202,9 @@ section p {
 }
 
 .choppa {
-  background: url("https://octodex.github.com/images/gangnamtocat.png") no-repeat center center;
-  background: cover;
+  background-image: url("https://octodex.github.com/images/repo.png");
+  background-position: center center;
+  background-repeat: no-repeat;
   font-size: 2rem;
   padding: 2em;
   height: 180vh;
@@ -252,6 +217,7 @@ section p {
   position: -webkit-sticky;
   position: sticky;
   top: 2em;
+  font-style: italic;
 }
 
 .choppa::before {
@@ -314,4 +280,38 @@ section p {
 
 .space {
   margin: 12vh 0;
+}
+
+.the-end {
+  position: relative;
+  text-align: center;
+  height: 55vh;
+}
+
+.the-end .top,
+.the-end .bottom {
+  color: var(--white);
+}
+
+.the-end .top {
+  font-size: 7rem;
+  position: -webkit-sticky;
+  position: sticky;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  top: 2em;
+}
+
+.the-end .bottom {
+  font-size: 5rem;
+  margin-top: 26vh;
+}
+
+.the-end img {
+  margin: 0 auto;
+  margin: -8vh 0 -32vh 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
