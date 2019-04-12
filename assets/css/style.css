@@ -21,6 +21,52 @@ body {
   background: -webkit-gradient(linear, left bottom, left top, from(var(--clr-1)), to(var(--clr-2)));
   background: linear-gradient(to top, var(--clr-1), var(--clr-2));
   min-height: 100vh;
-  font-size: 5rem;
+  font-size: 4em;
   margin: 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+p {
+  margin: 0;
+}
+
+.intro {
+  display: -ms-grid;
+  display: grid;
+  grid: "hello hello" 75vh "my-name-is simen" 125vh / -webkit-max-content 1fr;
+  grid: "hello hello" 75vh "my-name-is simen" 125vh / max-content 1fr;
+  margin-bottom: 150vh;
+  grid-gap: 15px;
+}
+
+.intro-1 {
+  grid-area: hello;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2em;
+  margin-bottom: 1.5em;
+}
+
+.intro-2 {
+  grid-area: my-name-is;
+  font-weight: 900;
+  font-style: italic;
+  position: -webkit-sticky;
+  position: sticky;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  top: 3.5em;
+}
+
+.intro-3 {
+  grid-area: simen;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  font-weight: 900;
+  font-style: italic;
 }
