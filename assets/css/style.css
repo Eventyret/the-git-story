@@ -6,6 +6,7 @@
   --clr-4: #f7797d;
   --clr-5: #c6ffdd;
   --clr-6: #e71d36;
+  --white: #fff;
 }
 
 *,
@@ -37,8 +38,8 @@ p {
 .intro {
   display: -ms-grid;
   display: grid;
-  grid: 'hello hello' 75vh 'my-name-is simen' 125vh / -webkit-max-content 1fr;
-  grid: 'hello hello' 75vh 'my-name-is simen' 125vh / max-content 1fr;
+  grid: 'hello hello' 75vh 'you-ready git-it' 125vh / -webkit-max-content 1fr;
+  grid: 'hello hello' 75vh 'you-ready git-it' 125vh / max-content 1fr;
   margin-bottom: 60vh;
   grid-gap: 15px;
   font-size: 4em;
@@ -56,9 +57,8 @@ p {
 }
 
 .intro-2 {
-  grid-area: my-name-is;
+  grid-area: you-ready;
   font-weight: 900;
-  font-style: italic;
   position: -webkit-sticky;
   position: sticky;
   -ms-flex-item-align: center;
@@ -68,7 +68,7 @@ p {
 }
 
 .intro-3 {
-  grid-area: simen;
+  grid-area: git-it;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
@@ -79,6 +79,8 @@ p {
 .css {
   text-align: center;
   margin-bottom: 60vh;
+  font-size: 7rem;
+  color: var(--white);
 }
 
 .git-commands {
@@ -88,6 +90,7 @@ p {
   display: grid;
   grid: 'text terminal' 1fr / 1fr 1fr;
   grid-gap: 1em;
+  color: var(--white);
   margin-bottom: 100vh;
 }
 
@@ -129,7 +132,7 @@ p {
 }
 
 .suprise {
-  color: #fff;
+  color: var(--white);
   position: -webkit-sticky;
   position: sticky;
   bottom: 100px;
@@ -150,7 +153,7 @@ p {
 
 .others p {
   z-index: 2;
-  color: #fff;
+  color: var(--white);
   position: -webkit-sticky;
   position: sticky;
   top: 2em;
@@ -174,7 +177,7 @@ p {
 
 .the-end .top,
 .the-end .bottom {
-  color: #fff;
+  color: var(--white);
 }
 
 .the-end .top {

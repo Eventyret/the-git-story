@@ -7,6 +7,7 @@
   --clr-4: #f7797d;
   --clr-5: #c6ffdd;
   --clr-6: #e71d36;
+  --white: #fff;
 }
 *,
 *::before,
@@ -36,7 +37,7 @@ p {
   display: grid;
   grid:
     'hello hello' 75vh
-    'my-name-is simen' 125vh / max-content 1fr;
+    'you-ready git-it' 125vh / max-content 1fr;
   margin-bottom: 60vh;
   grid-gap: 15px;
   font-size: 4em;
@@ -49,22 +50,25 @@ p {
   margin-bottom: 1.5em;
 }
 .intro-2 {
-  grid-area: my-name-is;
+  grid-area: you-ready;
   font-weight: 900;
-  font-style: italic;
   position: sticky;
   align-self: center;
   top: 3.5em;
 }
 .intro-3 {
-  grid-area: simen;
+  grid-area: git-it;
   align-self: end;
   font-weight: 900;
   font-style: italic;
 }
+
+
 .css {
   text-align: center;
   margin-bottom: 60vh;
+  font-size: 7rem;
+  color: var(--white)
 }
 
 .git-commands {
@@ -73,6 +77,7 @@ p {
   display: grid;
   grid: 'text terminal' 1fr / 1fr 1fr;
   grid-gap: 1em;
+  color: var(--white);
 
   margin-bottom: 100vh;
 
@@ -109,7 +114,7 @@ p {
   }
 }
 .suprise {
-  color: #fff;
+  color: var(--white);
   position: sticky;
   bottom: 100px;
   margin-top: 3em;
@@ -128,7 +133,7 @@ p {
 
   p {
     z-index: 2;
-    color: #fff;
+    color: var(--white);
     position: sticky;
     top: 2em;
   }
@@ -149,7 +154,7 @@ p {
   height: 55vh;
   .top,
   .bottom {
-    color: #fff;
+    color: var(--white)
   }
   .top {
     font-size: 7rem;
