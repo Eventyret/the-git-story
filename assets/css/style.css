@@ -315,3 +315,7 @@ section p {
   position: sticky;
   top: 0;
 }
+
+.git-terminal {
+  border-radius: 8px;
+}
