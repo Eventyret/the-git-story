@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 :root {
-  --clr-1: #f1502f;
-  --clr-2: #f5af19;
-  --clr-3: #fbd786;
+  --clr-1: #933ab4;
+  --clr-2: #fd1d1d;
+  --clr-3: #fcb045;
   --clr-4: #f7797d;
   --clr-5: #c6ffdd;
   --clr-6: #e71d36;
@@ -18,8 +18,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  background: -webkit-gradient(linear, left bottom, left top, from(var(--clr-1)), to(var(--clr-2)));
-  background: linear-gradient(to top, var(--clr-1), var(--clr-2));
+  background: -webkit-gradient(linear, left bottom, left top, from(var(--clr-1)), color-stop(var(--clr-2)), to(var(--clr-3)));
+  background: linear-gradient(to top, var(--clr-1), var(--clr-2), var(--clr-3));
   min-height: 100vh;
   font-size: 24px;
   margin: 0;
@@ -144,7 +144,7 @@ p {
   background: cover;
   font-size: 2rem;
   padding: 2em;
-  height: 150vh;
+  height: 180vh;
   position: relative;
 }
 
@@ -164,6 +164,36 @@ p {
   right: 0;
   left: 0;
   z-index: 1;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--clr-2)), color-stop(20%), to(transparent));
-  background: linear-gradient(var(--clr-2), 20%, transparent);
+}
+
+.the-end {
+  text-align: center;
+  height: 85vh;
+}
+
+.the-end .top, .the-end .bottom {
+  color: #fff;
+}
+
+.the-end h1 {
+  font-size: 7rem;
+  position: -webkit-sticky;
+  position: sticky;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  top: 2em;
+}
+
+.the-end h2 {
+  font-size: 5rem;
+  padding: 0.5em 0;
+}
+
+.the-end img {
+  margin: 0 auto;
+  margin: 10vh 0 70vh 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
