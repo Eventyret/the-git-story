@@ -112,6 +112,8 @@ p {
 .git-terminal img {
   position: relative;
   z-index: 3;
+  width: 100%;
+  height: auto;
 }
 
 .git-terminal::after {
