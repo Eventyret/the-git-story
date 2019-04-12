@@ -33,37 +33,6 @@ p {
   margin: 0;
 }
 
-.intro {
-  display: grid;
-  grid:
-    'hello hello' 75vh
-    'you-ready git-it' 125vh / max-content 1fr;
-  margin-bottom: 60vh;
-  grid-gap: 15px;
-  font-size: 4em;
-}
-.intro-1 {
-  grid-area: hello;
-  align-self: center;
-  position: sticky;
-  top: 2em;
-  margin-bottom: 1.5em;
-}
-.intro-2 {
-  grid-area: you-ready;
-  font-weight: 900;
-  position: sticky;
-  align-self: center;
-  top: 3.5em;
-}
-.intro-3 {
-  grid-area: git-it;
-  align-self: end;
-  font-weight: 900;
-  font-style: italic;
-}
-
-
 .css {
   text-align: center;
   margin-bottom: 60vh;
@@ -92,66 +61,7 @@ p {
     align-self: start;
   }
 }
-.git-terminal {
-  grid-area: terminal;
-  margin-top: 60vh;
-  background: var(--clr-1);
-  padding: 0.5em;
-  position: relative;
 
-  img {
-    position: relative;
-    z-index: 3;
-    width: 100%;
-    height: auto;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    background: linear-gradient(var(--clr-1), 91%, transparent);
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 2;
-  }
-}
-.suprise {
-  color: var(--white);
-  position: sticky;
-  bottom: 100px;
-  margin-top: 3em;
-  text-align: center;
-  font-weight: 900;
-  font-size: 2rem;
-}
-
-.others {
-  background: url('https://octodex.github.com/images/front-end-conftocat.png') no-repeat center center;
-  background: cover;
-  font-size: 2rem;
-  padding: 2em;
-  height: 180vh;
-  position: relative;
-
-  p {
-    z-index: 2;
-    color: var(--white);
-    position: sticky;
-    top: 2em;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    z-index: 1;
-  }
-}
 .play-with-history {
   background: url('../img/octobiwan.png') no-repeat center center;
   background: cover;
@@ -177,27 +87,199 @@ p {
     z-index: 1;
   }
 }
-.the-end {
-  position: relative;
-  text-align: center;
-  height: 55vh;
-  .top,
-  .bottom {
-    color: var(--white)
+
+
+
+/* Gh pages */
+.content {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  display: grid;
+  grid: auto / 200px 1fr;
+  grid-gap: 0 2em;
+
+  p {
+    grid-column: 2 / 3;
   }
-  .top {
-    font-size: 7rem;
+}
+
+.section-title {
+  grid-column: 1 / 2;
+  text-align: right;
+  align-self: start;
+  top: 1em;
+  position: sticky;
+  top: 1em;
+}
+.others {
+  background: url('https://octodex.github.com/images/homercat.png') no-repeat center center;
+  background: cover;
+  font-size: 2rem;
+  padding: 2em;
+  height: 180vh;
+  position: relative;
+
+  p {
+    z-index: 2;
+    color: var(--white);
     position: sticky;
-    align-self: start;
     top: 2em;
   }
-  .bottom {
-    font-size: 5rem;
-  }
-  img {
-    margin: 0 auto;
-    margin: 10vh 0 20vh 0;
-    position: sticky;
+
+  &::before {
+    content: '';
+    position: absolute;
     top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
   }
+}
+.team {
+  background: url('https://octodex.github.com/images/front-end-conftocat.png') no-repeat center center;
+  background: cover;
+  font-size: 2rem;
+  padding: 2em;
+  height: 180vh;
+  position: relative;
+
+  p {
+    z-index: 2;
+    color: var(--white);
+    position: sticky;
+    top: 2em;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+.history {
+  background: url('../img/octobiwan.png') no-repeat center center;
+  background: cover;
+  font-size: 2rem;
+  padding: 2em;
+  height: 180vh;
+  position: relative;
+
+  p {
+    z-index: 2;
+    color: var(--white);
+    position: sticky;
+    top: 2em;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+.keep-calm {
+  background: url('https://octodex.github.com/images/femalecodertocat.png') no-repeat center center;
+  background: cover;
+  font-size: 2rem;
+  padding: 2em;
+  height: 180vh;
+  position: relative;
+
+  p {
+    z-index: 2;
+    color: var(--white);
+    position: sticky;
+    top: 2em;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+.choppa {
+  background: url('https://octodex.github.com/images/gangnamtocat.png') no-repeat center center;
+  background: cover;
+  font-size: 2rem;
+  padding: 2em;
+  height: 180vh;
+  position: relative;
+
+  p {
+    z-index: 2;
+    color: var(--white);
+    position: sticky;
+    top: 2em;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+
+
+
+/* Intro text */
+.intro {
+  display: grid;
+  grid:
+    'hello hello' 75vh
+    'you-ready git-it' 125vh / max-content 1fr;
+  margin-bottom: 60vh;
+  grid-gap: 15px;
+  font-size: 4em;
+}
+.intro-1 {
+  grid-area: hello;
+  color: var(--white);
+  align-self: center;
+  position: sticky;
+  top: 2em;
+  margin-bottom: 1.5em;
+}
+.intro-2 {
+  grid-area: you-ready;
+  font-weight: 900;
+  position: sticky;
+  align-self: center;
+  top: 3.5em;
+}
+.intro-3 {
+  grid-area: git-it;
+  color: var(--white);
+  align-self: end;
+  font-weight: 900;
+  font-style: italic;
+  span {
+    font-style: normal;
+  }
+}
+
+.space {
+  margin: 12vh 0;
 }
