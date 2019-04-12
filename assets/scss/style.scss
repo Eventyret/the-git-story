@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+  --clr-1: #F1502F;
+  --clr-2: #011627;
+  --clr-3: #FDFFFC;
+  --clr-4: #2EC4B6;
+  --clr-5: #E71D36;
+  --clr-6: #FF9F1C;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
