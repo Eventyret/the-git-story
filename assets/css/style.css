@@ -83,6 +83,11 @@ p {
   color: var(--white);
 }
 
+.jedi {
+  margin-bottom: 10vh;
+  z-index: -1;
+}
+
 .git-commands {
   width: 80%;
   margin: 0 auto;
@@ -160,6 +165,33 @@ p {
 }
 
 .others::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.play-with-history {
+  background: url("../img/octobiwan.png") no-repeat center center;
+  background: cover;
+  font-size: 2rem;
+  padding: 2em;
+  height: 180vh;
+  position: relative;
+}
+
+.play-with-history p {
+  z-index: 2;
+  color: var(--white);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2em;
+}
+
+.play-with-history::before {
   content: '';
   position: absolute;
   top: 0;
