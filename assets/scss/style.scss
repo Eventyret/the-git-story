@@ -100,7 +100,7 @@ p {
   &::after {
     content: '';
     position: absolute;
-    background: linear-gradient(var(--clr-1), 94%, transparent 20%);
+    background: linear-gradient(var(--clr-1), 91%, transparent);
     top: 0;
     bottom: 0;
     right: 0;
@@ -116,4 +116,31 @@ p {
   text-align: center;
   font-weight: 900;
   font-size: 2rem;
+}
+
+.others {
+  background: url('https://octodex.github.com/images/front-end-conftocat.png') no-repeat center center;
+  background: cover;
+  font-size: 2rem;
+  padding: 2em;
+  height: 150vh;
+  position: relative;
+  
+  p {
+    z-index: 2;
+    color: #fff;
+    position: sticky;
+    top: 2em;
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1; 
+    background: linear-gradient(var(--clr-2), 20%, transparent);
+  }
 }
