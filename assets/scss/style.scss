@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|Indie+Flower');
+
+:root {
+  --clr-1: #933ab4;
+  --clr-2: #fd1d1d;
+  --clr-3: #fcb045;
+  --clr-4: #f7797d;
+  --clr-5: #c6ffdd;
+  --clr-6: #e71d36;
+  --white: #fff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@mixin background($imgpath) {
+  background: {
+    image: url($imgpath);
+  }
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 2rem;
+  padding: 2em;
+  height: 180vh;
+  position: relative;
+
+  p {
+    z-index: 2;
+    color: var(--white);
+    position: sticky;
+    top: 2em;
+    font-style: italic;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+  font-weight: 400;
+  background: linear-gradient(to top, var(--clr-3), var(--clr-2), var(--clr-1));
+  min-height: 100vh;
+  font-size: 24px;
+  margin: 0;
+  color: rgba(black, 0.7);
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+  font-family: 'Indie Flower', cursive;
+}
+
+.css {
+  text-align: center;
+  margin-bottom: 60vh;
+  font-size: 7rem;
+  color: var(--white);
+  font-family: 'Exo', sans-serif;
+}
+.jedi {
+  margin-bottom: 10vh;
+  z-index: -1;
+}
+
+/* Gh pages */
+.content {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  display: grid;
+  grid: auto / 200px 1fr;
+  grid-gap: 0 2em;
+
+  p {
+    grid-column: 2 / 3;
+    color: var(--white);
+    font-style: italic;
+  }
+}
+
+.section-title {
+  grid-column: 1 / 2;
+  text-align: right;
+  align-self: start;
+  top: 1em;
+  position: sticky;
+  top: 1em;
+}
+.others {
+  @include background('https://octodex.github.com/images/homercat.png');
+}
+.team {
+  @include background('https://octodex.github.com/images/front-end-conftocat.png');
+}
+.history {
+  @include background('../img/octobiwan.png');
+}
+.keep-calm {
+  @include background('https://octodex.github.com/images/femalecodertocat.png');
+}
+.choppa {
+  @include background('https://octodex.github.com/images/repo.png');
+}
+
+/* Intro text */
+.intro {
+  display: grid;
+  grid:
+    'hello hello' 75vh
+    'you-ready git-it' 125vh / max-content 1fr;
+  margin-bottom: 60vh;
+  grid-gap: 15px;
+  font-size: 4em;
+}
+.intro-1 {
+  grid-area: hello;
+  color: var(--white);
+  align-self: center;
+  position: sticky;
+  top: 2em;
+  margin-bottom: 1.5em;
+}
+.intro-2 {
+  grid-area: you-ready;
+  font-weight: 900;
+  position: sticky;
+  align-self: center;
+  top: 3.5em;
+}
+.intro-3 {
+  grid-area: git-it;
+  color: var(--white);
+  align-self: end;
+  font-weight: 900;
+  font-style: italic;
+  span {
+    font-style: normal;
+  }
+}
+
+.space {
+  margin: 12vh 0;
+}
+
+.the-end {
+  position: relative;
+  text-align: center;
+  height: 55vh;
+  .top,
+  .bottom {
+    color: var(--white);
+  }
+  .top {
+    font-size: 7rem;
+    position: sticky;
+    align-self: start;
+    top: 2em;
+  }
+  .bottom {
+    font-size: 5rem;
+    margin-top: 26vh;
+  }
+  img {
+    margin: 0 auto;
+    margin: -8vh 0 -32vh 0;
+    position: sticky;
+    top: 0;
+  }
+}
+.git-terminal {
+  border-radius: 8px;
+}
