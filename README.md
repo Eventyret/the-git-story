@@ -2,4 +2,4 @@
 
 This is the story of git.
 
-Max is one of the users!
+Max is the new user!
