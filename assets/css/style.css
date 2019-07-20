@@ -40,7 +40,7 @@ p {
   text-align: center;
   margin-bottom: 60vh;
   font-size: 7rem;
-  color: var(--white);
+  color: black;
   font-family: 'Exo', sans-serif;
 }
 
@@ -234,8 +234,10 @@ section p {
 .intro {
   display: -ms-grid;
   display: grid;
-  grid: 'hello hello' 75vh 'you-ready git-it' 125vh / -webkit-max-content 1fr;
-  grid: 'hello hello' 75vh 'you-ready git-it' 125vh / max-content 1fr;
+  grid: 'hello hello' 75vh
+ 'you-ready git-it' 125vh / -webkit-max-content 1fr;
+  grid: 'hello hello' 75vh
+ 'you-ready git-it' 125vh / max-content 1fr;
   margin-bottom: 60vh;
   grid-gap: 15px;
   font-size: 4em;
